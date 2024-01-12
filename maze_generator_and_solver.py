@@ -12,3 +12,9 @@ class WINDOW:
         self.__canvas.pack(fill=BOTH, expand=1) # Make the Canvas fill the window
 
         self.__isRunning = False # Running state attribute
+
+    def redraw(self):
+        self.__root.update_idletasks()
+        self.__root.update()
+
+    
