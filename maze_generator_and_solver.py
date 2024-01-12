@@ -7,11 +7,13 @@ class WINDOW:
         self.__root = Tk() # Creates the new root widget
         self.__root.geometry(f"{width}x{height}") # Sets the size of the window using the width and height parameters
         self.__root.title(title) # Set the window title
+        self.__root.protocol("WM_DELETE_WINDOW", self.close)
 
         self.__canvas = Canvas(self.__root) # Create the Canvas
         self.__canvas.pack(fill=BOTH, expand=1) # Make the Canvas fill the window
 
         self.__isRunning = False # Running state attribute
+
 
     def redraw(self):
         self.__root.update_idletasks()
@@ -21,3 +23,6 @@ class WINDOW:
         self.running = True
         while self.running:
             self.redraw()
+
+    def close(self):
+        self.running = False
