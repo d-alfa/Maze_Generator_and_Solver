@@ -1,7 +1,7 @@
 
 from tkinter import Tk, BOTH, Canvas
 
-class WINDOW:
+class Window:
 
     def __init__(self, width, height, title):
         self.__root = Tk() # Creates the new root widget
@@ -26,3 +26,10 @@ class WINDOW:
 
     def close(self):
         self.running = False
+
+    def main():
+        win = Window(800, 600)
+        win.wait_for_close()
+
+    if __name__ == "__main__":
+        main()
