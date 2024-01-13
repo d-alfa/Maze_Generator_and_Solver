@@ -23,3 +23,8 @@ class Window:
 
     def close(self):
         self.__running = False
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
