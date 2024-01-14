@@ -113,10 +113,10 @@ class Maze:
         self._animate()
 
         # visit the current cell
-        self.__cells[i][j].visited = True
+        self._cells[i][j].visited = True
 
         # if we are at the end cell, we are done!
-        if i == self.self._nums_cols - 1 and j == self._num_rows - 1:
+        if i == self._num_cols - 1 and j == self._num_rows - 1:
             return True
         
         # move left if there is no wall and it hasn't been visited
@@ -153,3 +153,7 @@ class Maze:
 
         # we went the wrong way let the previous cell know by returning False
         return False
+    
+    # create the moves for the solution using a depth first search(dfs)
+    def solve(self):
+        return self._solve_r(0, 0)
