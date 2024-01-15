@@ -55,9 +55,9 @@ class Cell:
         to_x_mid = (to_cell._x1 + to_cell._x2)/2
         to_y_mid = (to_cell._y1 + to_cell._y2)/2
 
-        fill_color = "red"
+        fill_color = "#BE3144"
         if undo:
-            fill_color = "gray"
+            fill_color = "#E5E4E2"
 
         if self._x1 > to_cell._x1:
             line = Line(Point(self._x1, y_mid), Point(x_mid, y_mid))
