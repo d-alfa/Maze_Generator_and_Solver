@@ -1,29 +1,20 @@
-# Maze Generator and Solver
+# Maze Generator and Solver (feature_02)
 
 ## Overwiew
 
-Maze generator and solver, draws a randomized maze using **tkinter (GUI)** and then systematically solves it using **depth first search (DFS)**.
-
-## Requirements
-
-- Python 3.x
-- Tkinter(GUI)
+Maze solver, systematically solves it using **depth first search (DFS)**.
 
 ## Features
 
-- Creates randomized maze
 - Solves maze
 
-## Usage
+## Changes
 
-**1. Navigate to the project directory:**
-```bash
-cd Maze_Generator_and_Solver/
-```
-**2. Run main.py file:**
-```bash
-python main.py
-```
-**3. Output:**
-
-![Maze Logo](Output.png)
+- **Create** _solve_r and solve functions
+- **Upgrade** main for solve function
+- **Change** fill_color colors
+- **Create** _reset_cells_visited function
+- **Update** maze variable
+- **Create** _break_walls_r function
+- **Update** constructor
+- **Update** draw function
